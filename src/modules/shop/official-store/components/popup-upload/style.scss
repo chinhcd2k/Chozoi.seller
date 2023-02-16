@@ -1,0 +1,26 @@
+@import "../templates/headers/styles/popup-upload";
+
+@mixin popup-upload {
+  background-color: rgba(200, 200, 200, .4);
+  .modal-dialog {
+    max-width: 400px !important;
+  }
+  div.add {
+    @include div-add;
+  }
+  div.image {
+    position: relative;
+
+    img {
+      max-width: 100%;
+    }
+
+    img:hover + div.remove {
+      display: flex;
+    }
+
+    div.remove {
+      @include action-remove-image;
+    }
+  }
+}

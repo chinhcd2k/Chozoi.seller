@@ -1,0 +1,15 @@
+@mixin infomation-basic-style {
+  div.note-editor {
+    border: none;
+  }
+
+  div.note-toolbar {
+    background-color: white;
+  }
+
+  div.codition {
+    p {
+      margin-bottom: 5px;
+    }
+  }
+}

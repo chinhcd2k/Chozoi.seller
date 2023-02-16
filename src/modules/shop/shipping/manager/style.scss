@@ -1,0 +1,42 @@
+div#manager-seller-shipping {
+  .card {
+    background-color: transparent;
+    border: none;
+  }
+
+  .card-header {
+    background-color: transparent;
+    border: none;
+  }
+
+  table {
+    background-color: white;
+
+    th {
+      font-weight: 700;
+      text-align: center;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    td:nth-of-type(2) button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    td:nth-of-type(3) {
+      a {
+        margin-right: 1em;
+      }
+
+      button {
+        background-color: white;
+        border: solid 1px #e1e1e1;
+        cursor: pointer;
+      }
+    }
+  }
+}

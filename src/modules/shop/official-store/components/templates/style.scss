@@ -1,0 +1,36 @@
+@import "headers/style";
+@import "baner-primary/style";
+@import "category/style";
+@import "banner/style";
+@import "actions/styles";
+
+@mixin templates-style {
+  div.templates-header {
+    @include template-header;
+  }
+  div.templates-banner-primary {
+    @include templates-banner-primary;
+  }
+  div.template-category {
+    @include template-category;
+  }
+  div.template-banner {
+    @include template-banner;
+  }
+  div.template-actions {
+    @include template-actions;
+  }
+
+  /*Popup style*/
+  div.modal#popup-manager {
+    @include popup-manager;
+  }
+
+  div.modal#popup-upload {
+    @include popup-upload;
+  }
+
+  div.modal#popup-category {
+    @include popup-category;
+  }
+}

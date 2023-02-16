@@ -1,0 +1,126 @@
+tr.product-manager-product-item {
+  td {
+    vertical-align: middle !important;
+
+    &:first-of-type {
+      min-width: 34px;
+      width: 34px;
+    }
+
+    &.td-product {
+      width: 400px;
+      min-width: 300px;
+      max-height: 350px;
+
+      div.name {
+        padding-left: .5em;
+
+        a {
+          width: 240px;
+          align-self: baseline;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .image {
+        border: solid 1px #cccccc;
+        width: 65px;
+        height: 65px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .ready {
+        background-color: rgba(0, 0, 0, .3);
+      }
+    }
+
+    div.td-quantity {
+      min-width: 120px;
+
+      div.change-quantity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          width: 60px;
+        }
+
+        .fa {
+          margin-left: 5px;
+          cursor: pointer;
+          border: solid 1px #cccccc;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    &.td-variants {
+      min-width: 300px;
+      padding: 0;
+
+      div.row {
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &.td-promotion {
+      min-width: 200px;
+    }
+
+    &.td-state {
+      min-width: 100px;
+    }
+
+    .classifier {
+      margin: 0;
+
+      div.change-quantity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          width: 60px;
+        }
+
+        .fa {
+          margin-left: 5px;
+          cursor: pointer;
+          border: solid 1px #cccccc;
+          border-radius: 3px;
+
+          &:last-of-type {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    &.flag {
+      text-align: center;
+
+      i.fa-flag-alt {
+        color: #8bc34a;
+      }
+    }
+
+    &.td-action > div {
+      margin-left: -8px;
+
+      & > button, & > a {
+        margin-left: 8px;
+      }
+    }
+  }
+}

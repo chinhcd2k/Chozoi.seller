@@ -1,0 +1,14 @@
+@import "../components/edit-template/EditTemplateStyle";
+
+div#create-product {
+  @include edit-template;
+
+  .text-white {
+    color: white;
+  }
+
+  i.fa-edit.btn-edit {
+    cursor: pointer;
+    color: #1976d2;
+  }
+}

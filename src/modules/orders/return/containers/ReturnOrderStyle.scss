@@ -1,0 +1,68 @@
+div#order-return {
+  .card {
+    background-color: transparent;
+    border: none;
+  }
+
+  .search-order-return {
+    margin-bottom: 20px;
+  }
+
+  input {
+    padding-left: 2em;
+  }
+
+  .fa-search {
+    top: .8em;
+    left: 1.5em
+  }
+
+  .btn-secondary {
+    color: #FFF;
+    background-color: #868e96;
+    border-color: #868e96;
+  }
+
+  .btn-outline {
+    color: #868e96;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .flex-grow-1 {
+    min-width: 200px;
+  }
+
+  .position-relative .fa {
+    z-index: 1;
+    top: .8em;
+    left: .6em
+  }
+
+  .react-bootstrap-daterangepicker-container {
+    width: 100%;
+
+    i {
+      position: absolute;
+      top: .8em;
+      left: 1.5em;
+    }
+  }
+
+  .react-datepicker__current-month {
+    font-size: 1.2rem;
+  }
+
+  .react-datepicker__day {
+    width: 2.7rem;
+    line-height: 2.7rem;
+  }
+
+  table {
+    tbody tr {
+      td {
+        vertical-align: middle;
+      }
+    }
+  }
+}

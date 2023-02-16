@@ -1,0 +1,77 @@
+@import "styles/popup-upload";
+
+@mixin template-header {
+  .row-0 {
+    display: flex;
+    border-radius: 4px;
+
+    div.add {
+      width: 220px;
+      height: 60px;
+      border-radius: 4px;
+      background-color: #E1E1E1;
+      margin-right: 16px;
+      cursor: pointer;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      label {
+        color: #1b7ee0;
+      }
+
+      i.fal {
+        color: white;
+      }
+    }
+
+    div.description {
+      h4 {
+        margin-top: 0;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          border-left: solid 1px #E1E1E1;
+          padding: 0 8px;
+        }
+
+        li:nth-of-type(1) {
+          margin-left: -8px;
+          padding-right: 0;
+
+          div.store {
+            background-color: #1976d2;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+          }
+        }
+
+        li:nth-of-type(1), li:nth-of-type(2) {
+          border-color: transparent;
+        }
+      }
+    }
+  }
+  .row-1 nav.navbar {
+    margin-top: 24px;
+  }
+
+  /*Popup*/
+  div.modal#template-header-popup {
+    @include template-header-popup-upload;
+  }
+}

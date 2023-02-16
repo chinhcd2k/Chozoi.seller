@@ -1,0 +1,18 @@
+@import "../components/detail-template/DetailTemplateStyle";
+
+div#create-product {
+  @include detail-template;
+
+  div#store-and-price {
+    .form-group {
+      position: relative;
+
+      i.fas.fa-pen {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+}

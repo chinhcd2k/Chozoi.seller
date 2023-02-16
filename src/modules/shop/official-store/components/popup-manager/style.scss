@@ -1,0 +1,19 @@
+@import "src/modules/shop/official-store/components/popup-upload/style";
+@import "src/modules/shop/official-store/components/popup-category/style";
+
+@mixin popup-manager {
+  div.modal-dialog {
+    max-width: 500px !important;
+  }
+  ol {
+    padding-left: 16px;
+  }
+  div.image {
+    max-width: 60px;
+    cursor: pointer;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

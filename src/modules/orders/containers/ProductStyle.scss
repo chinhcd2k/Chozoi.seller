@@ -1,0 +1,50 @@
+div.order-return-item-product {
+  table {
+    tbody tr {
+      td:first-of-type {
+        position: relative;
+        width: 450px;
+
+        img {
+          height: 100px;
+          border: solid 1px #cccccc;
+        }
+
+        div.product-name {
+          position: absolute;
+          left: 115px;
+          top: 10px;
+
+          ul.atrributes {
+            padding-left: 20px;
+          }
+        }
+      }
+
+      td {
+        vertical-align: middle;
+      }
+    }
+
+    tfoot tr td {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          float: left;
+
+          &:not(:first-of-type) {
+            margin-left: 1em;
+          }
+
+          img {
+            height: 80px;
+            border: solid 1px #cccccc;
+          }
+        }
+      }
+    }
+  }
+}

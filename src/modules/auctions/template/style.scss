@@ -1,0 +1,101 @@
+@import "styles/InfomationBasicStyle";
+@import "styles/GalleryStyle";
+@import "styles/ShippingStyle";
+@import "styles/PriceAndStoreStyle";
+@import "styles/FreeShippingStyle";
+@import "styles/PopupGuideStyle";
+
+div#template-form-auction {
+  div#products-infomation {
+    @include infomation-basic-style;
+  }
+
+  div#products-gallery {
+    @include gallery-style;
+  }
+
+  div#products-shipping {
+    @include shipping-style;
+  }
+
+  div#card-price-store {
+    @include price-and-store-style;
+  }
+
+  div.card.freeship {
+    border: none;
+    @include free-shipping-style;
+  }
+
+  div.modal#popup-guide-auction-flash-bids {
+    @include popup-guide-style;
+  }
+  div.modal#popup-guide-auction-auction-reverse{
+    @include popup-guide-style;
+  }
+
+  div.card#card-information-basic,
+  div.card#card-shipping,
+  div.card#card-variants,
+  div.card#card-gallery,
+  div.card#card-price-store,
+  div.card#card-public,
+  div.card#card-time-duration,
+  div.card.freeship {
+    margin-top: 1em;
+  }
+
+  .start-price, .steps-price, .price-buy-now,.market-price,.cost-price {
+    max-width: 300px;
+    position: relative;
+
+    &:after {
+      content: 'đ';
+      position: absolute;
+      right: 10px;
+      top: 45px;
+    }
+
+    label {
+      line-height: 34px;
+      width: 128px;
+    }
+  }
+  .market-price,.cost-price{
+    &:after {
+      top: 103px!important;
+    }
+  }
+  .amount{
+    max-width: 300px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      right: 10px;
+      top: 45px;
+    }
+
+    label {
+      line-height: 34px;
+      width: 128px;
+    }
+  }
+}
+.listed-price{
+p{
+  height: 55px;
+}
+}
+.cost{
+   p{
+     height: 55px;
+   }
+ }
+div .reverse-auction{
+  label{
+    color: #000000;
+    font-family: OpenSans-Semibold;
+  }
+
+}

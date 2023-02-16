@@ -1,0 +1,34 @@
+@import "src/modules/shop/official-store/components/popup-manager/style";
+
+@mixin templates-banner-primary {
+  min-height: 320px;
+  background-color: #E1E1E1;
+  & > div.add {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    min-height: 320px;
+
+    label {
+      color: #1b7ee0;
+    }
+
+    i {
+      color: white;
+    }
+  }
+  & > div.image {
+    cursor: pointer;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  div.modal#popup-manager {
+    @include popup-manager;
+  }
+}

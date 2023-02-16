@@ -1,0 +1,22 @@
+@mixin popup-category {
+  background-color: rgba(200, 200, 200, .4);
+  .modal-dialog {
+    max-width: 400px !important;
+  }
+  div.radio-group {
+    margin-top: -10px;
+  }
+  tr td:nth-of-type(2) {
+    ul {
+      padding-left: 16px;
+      max-height: 500px;
+      div.radio-group {
+        margin-top: -32px;
+      }
+    }
+
+    div.checkbox-group {
+      margin-top: -4px;
+    }
+  }
+}

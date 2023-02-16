@@ -1,0 +1,158 @@
+div#order-return-detail {
+  div.card {
+    margin-top: 10px;
+    padding: 1em;
+  }
+
+  div.card#detail-revenue, div.card#detail-revenue-temp {
+    position: relative;
+
+    a[aria-expanded="false"]:after {
+      font-family: "Font Awesome 5 Pro", serif;
+      font-weight: 900;
+      content: "\f105";
+      margin-left: 5px;
+    }
+
+    a[aria-expanded="true"]:after {
+      content: "\f107";
+      font-family: "Font Awesome 5 Pro", serif;
+      font-weight: 900;
+      margin-left: 5px;
+    }
+
+    b.payment {
+      position: absolute;
+      right: 1em;
+      font-weight: bold;
+      top: 10px;
+    }
+
+    a[aria-expanded="true"] + b.payment {
+      display: none;
+    }
+
+    div.content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      ul {
+        list-style: none;
+
+        li {
+          min-height: 18px;
+        }
+
+        li:first-of-type {
+          margin-bottom: 1em;
+          font-weight: bold;
+        }
+
+        li:nth-of-type(2) {
+          font-weight: bold;
+          margin-bottom: .5em;
+        }
+
+        li:last-of-type {
+          margin-top: 1em;
+          font-weight: bold;
+        }
+      }
+
+      ul:first-of-type {
+        padding: 0 2em;
+        flex-grow: 1;
+        text-align: right;
+        border-right: solid 1px #cccccc;
+      }
+
+      ul:last-of-type {
+        min-width: 100px;
+        padding: 0 2em;
+        text-align: right;
+      }
+    }
+
+    &#detail-revenue div.content ul li:nth-of-type(6) {
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+  }
+
+  div.card#process {
+    .progress {
+      top: 48.5px;
+    }
+
+    .progress-line ul {
+      li {
+        a > span.icon-circle {
+          background-color: #1b7ee0;
+
+          span {
+            display: block;
+            color: white;
+          }
+        }
+
+        &.active small {
+          color: #1b7ee0;
+        }
+      }
+
+      li.active ~ li {
+        a {
+          opacity: 1;
+        }
+
+        a > span.icon-circle {
+          background-color: white;
+          border: dashed 1px #cccccc;
+
+          span {
+            color: #cccccc;
+          }
+        }
+      }
+    }
+
+    .progress-bar {
+      background-color: #1b7ee0;
+    }
+
+    div.content {
+      border: solid 1px #cccccc;
+      padding: 1em;
+
+      .collapse.in + div {
+        display: none;
+
+        a:before {
+          content: "Thu lại";
+        }
+
+        a:after {
+          content: "\f106";
+          font-family: "Font Awesome 5 Pro", serif;
+          margin-left: 5px;
+        }
+      }
+
+      a[data-toggle="collapse"] {
+        text-align: center;
+        padding: 0 1em;
+
+        &:before {
+          content: "Xem chi tiết";
+        }
+
+        &:after {
+          content: "\f107";
+          margin-left: 5px;
+          font-family: "Font Awesome 5 Pro", serif;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@mixin price-and-store-style {
+  ul.nav-tabs li {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+
+    &.active {
+      background-color: white;
+      border: solid 1px #e1e1e1;
+      border-radius: 4px 4px 0 0;
+      color: #1976d2;
+      border-bottom: none;
+      font-weight: 700;
+    }
+  }
+
+  input {
+    max-width: 300px;
+  }
+}

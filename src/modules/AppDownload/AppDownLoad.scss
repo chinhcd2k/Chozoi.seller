@@ -1,0 +1,192 @@
+.download-app {
+  background-color: white;
+  .header{
+    width: 100%;
+    height: 80px;
+    img {
+      height: 50px;
+    }
+  }
+  .sell_2 {
+    .title h2 {
+      max-width: 480px;
+      height: 66px;
+      color: #000000;
+      font-size: 24px;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .table_sell {
+      width: 100%;
+      background-color: #F4F5F6;
+
+      .css_234 {
+        width: 1220px;
+
+        table {
+          width: 1220px !important;
+        }
+      }
+
+      img {
+        width: 88px;
+        height: 88px;
+      }
+
+      .personal {
+        width: 304px;
+        height: 531px;
+        background-color: #E6F6DC;
+
+        .header {
+          height: 120px;
+
+        }
+
+      }
+    }
+  }
+  footer.footer {
+    width: 100%;
+    height: auto;
+    padding: 30px 0 0;
+    background-color: #1B1E21;
+
+    .content {
+      margin-bottom: 24px;
+      align-items: center;
+      .logo {
+        margin-right: 30px;
+
+        img {
+          width: 160px;
+          height: 66px;
+        }
+      }
+
+      .css_footer {
+        p {
+          color: white;
+          margin: 0;
+          font-size: 15px;
+        }
+      }
+
+      .connect {
+        width: 450px;
+
+        span {
+          color: #FFFFFF;
+          font-size: 16px;
+        }
+
+        a {
+          width: 32px;
+          height: 32px;
+          margin-left: 8px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: white;
+
+          i {
+            font-size: 18px;
+          }
+
+          .fa-facebook-f {
+            color: #4267B2;
+          }
+
+          .fa-youtube {
+            color: #DB4437;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      padding: 9px 0 20px;
+      border-top: 1px solid #707070;
+
+      p {
+        color: white;
+        margin-bottom: 0;
+        font-size: 15px;
+
+        span {
+          color: #F54B24;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1700px){
+  .banner-header{
+    .scroll_download{
+      img{
+        width: 460px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .download-app .table_sell {
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .download-app .footer{
+    .logo img {
+      width: 120px !important;
+      height: auto !important;
+    }
+    .content{
+      align-items: normal!important;
+      flex-direction: column;
+      .connect{
+        width: 100%!important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px){
+  .download-app{
+   .sell_2{
+     .table_sell {
+       padding-bottom: 20px;
+     }
+     .title h2{
+       height: 95px;
+     }
+   }
+    .banner_download{
+      .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .col-md-6{
+          padding: 0 20px;
+        }
+      }
+      .logo img{
+        width: 120px !important;
+      }
+      img.mt-4{
+        width: 75px !important;
+      }
+    }
+    .footer {
+      padding: 15px 0 0!important;
+    }
+  }
+  .share_fb{
+    width: 120px;
+  }
+}

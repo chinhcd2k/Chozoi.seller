@@ -1,0 +1,117 @@
+@import "styles/product";
+@import "styles/popup-products";
+@import "../../popup-manager/style";
+@import "styles/category-view";
+
+@mixin template-category {
+  margin-top: 16px;
+  div.panel-body {
+    div.banner-container {
+      position: relative;
+
+      div.category-view {
+        @include category-view;
+      }
+
+      div.image {
+        cursor: pointer;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    div.add {
+      height: 460px;
+      cursor: pointer;
+      background-color: #E1E1E1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+
+      label {
+        color: #1b7ee0;
+      }
+    }
+
+    div.list-product {
+      position: relative;
+      width: 896px;
+      margin-left: 176px;
+      margin-top: -80px;
+      background-color: white;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-top: 16px;
+      box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+      border: solid 1px #e1e1e1;
+
+      div.add {
+        cursor: pointer;
+        margin: 0 0 16px 16px;
+        width: 160px;
+        max-width: 160px;
+        overflow: hidden;
+        height: 240px;
+        background-color: #e1e1e1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          color: white
+        }
+      }
+
+      div.product {
+        @include product;
+        margin: 0 0 16px 16px;
+      }
+
+      div.product:nth-of-type(6), div.product:nth-of-type(7), div.product:nth-of-type(8) {
+        min-width: 277.33px;
+        max-width: 277.33px;
+        height: 128px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        display: flex;
+        align-items: flex-start;
+
+        img {
+          max-width: 120px;
+        }
+
+        div.content {
+          padding-left: 8px;
+
+          p.name {
+            margin-bottom: 16px;
+          }
+        }
+      }
+
+      & > div.add:nth-of-type(6), & > div.add:nth-of-type(7), & > div.add:nth-of-type(8) {
+        min-width: 277.33px;
+        height: 128px;
+      }
+    }
+  }
+
+  div.modal#popup-manager {
+    .modal-dialog {
+      max-width: 500px !important;
+    }
+
+    @include popup-manager;
+  }
+
+  div.modal#popup-products {
+    background-color: rgba(200, 200, 200, 0.48);
+    @include popup-products;
+  }
+}

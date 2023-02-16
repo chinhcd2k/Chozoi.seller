@@ -1,0 +1,47 @@
+div#products-manager-auction {
+  .card {
+    background-color: transparent;
+    border: none;
+  }
+
+  .card-header {
+    background-color: transparent;
+    border: none;
+  }
+
+  .card-footer {
+    background-color: white;
+  }
+
+  .card-header {
+    div.search {
+      //width: 600px;
+
+      input {
+        width: 480px;
+        display: inline-block;
+      }
+
+      button {
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
+    }
+
+    button.btn-add {
+      position: absolute;
+      right: 10px;
+      top: 7px;
+    }
+  }
+
+  .card-body {
+    background-color: transparent;
+    padding-bottom: 0;
+  }
+
+  .text-end {
+    text-align: end;
+  }
+}

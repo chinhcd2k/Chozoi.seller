@@ -1,0 +1,48 @@
+div#revenue-wallet {
+  .card-body > .actions, .card > .actions {
+    position: absolute;
+    right: 15px;
+    z-index: 2;
+    top: 10px;
+  }
+
+  .btn-secondary {
+    color: #FFF;
+    background-color: #868e96;
+    border-color: #868e96;
+  }
+
+  .btn-outline {
+    color: #868e96;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  @media screen and (max-width: 479.98px) {
+    .header {
+      div.actions {
+        position: inherit;
+        right: unset;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  /*Create by sondev 22/11/2019*/
+  table {
+    thead tr {
+      th:nth-of-type(4) {
+        text-align: center;
+      }
+
+      th:nth-of-type(5),
+      th:nth-of-type(6) {
+        text-align: right;
+      }
+    }
+
+    tbody tr td {
+      vertical-align: middle;
+    }
+  }
+}

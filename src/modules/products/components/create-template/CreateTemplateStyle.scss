@@ -1,0 +1,89 @@
+@import "src/modules/auctions/template/styles/GalleryStyle";
+
+@mixin create-template {
+  div.create-template {
+    .fa-info-circle {
+      cursor: pointer;
+      padding-left: 5px;
+    }
+
+    .tooltip .tooltip-inner {
+      text-align: left !important;
+    }
+    .panel {
+      margin-bottom: 0;
+    }
+
+    .note-editor.note-frame {
+      border: none;
+    }
+
+    ol {
+      padding-left: 0;
+
+      & > li {
+        list-style: none;
+        padding: 5px 0;
+
+        p {
+          margin: 0;
+        }
+
+        &:not(:first-of-type) {
+          border-top: dashed 1px #cccccc;
+        }
+      }
+    }
+
+    ul {
+      list-style: initial;
+      padding-left: 24px;
+    }
+
+    div#products-gallery {
+      @include gallery-style;
+    }
+
+    div.card.freeship {
+      border: none;
+
+      .card-header {
+        background-color: white;
+        font-family: Roboto-Bold, serif;
+      }
+
+      .card-body {
+        div.dash {
+          margin-top: 16px;
+          border: dashed 1px #e1e1e1;
+          padding: 16px;
+
+          div.btn-switch {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            i {
+              cursor: pointer;
+            }
+
+            i.fa-toggle-on {
+              color: #1b7ee0;
+            }
+          }
+
+          i a {
+            text-decoration: underline;
+            color: #1b7ee0;
+          }
+        }
+      }
+    }
+
+    // overide css react-summernote
+    ul.note-dropdown-menu.dropdown-menu.note-check {
+      list-style: none;
+    }
+  }
+}

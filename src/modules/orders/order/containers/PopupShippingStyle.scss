@@ -1,0 +1,85 @@
+@mixin popup-shipping-style {
+  .modal-body {
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      label {
+        min-width: 120px;
+      }
+
+      input, select {
+        width: 200px;
+      }
+
+      p {
+        width: 100%;
+        margin-top: -8px;
+        margin-bottom: 0;
+      }
+    }
+
+    div.box-images {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0 -8px;
+        display: flex;
+
+        li {
+          width: 108px;
+          height: 180px;
+          border: solid 1px #e1e1e1;
+          margin-left: 8px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+          position: relative;
+
+          input {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+          }
+
+          img {
+            max-width: 100%;
+          }
+
+          i {
+            cursor: pointer;
+          }
+
+          button {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            padding: 4px;
+            right: 0;
+            top: 0;
+
+            i {
+              color: red;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

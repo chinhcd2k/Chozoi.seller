@@ -1,0 +1,41 @@
+@import "styles/ProcessStyle";
+
+div#router-shop-rank {
+  min-height: 100vh;
+
+  .container {
+    background-color: white;
+  }
+
+  div#process-rank {
+    margin-top: 24px;
+    border-radius: 4px;
+    @include process-style;
+  }
+
+  label.positive-warning {
+    margin: 10px 0;
+
+    b {
+      font-family: Roboto-Bold, serif;
+    }
+  }
+
+  table {
+    thead tr {
+      th:not(:first-of-type) {
+        text-align: center;
+      }
+    }
+
+    tbody tr {
+      td:not(:first-of-type) {
+        text-align: end;
+      }
+
+      td span.badge {
+        margin-left: 4px;
+      }
+    }
+  }
+}

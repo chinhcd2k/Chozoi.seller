@@ -1,0 +1,133 @@
+.wrapper-btn-filter {
+    display: flex;
+
+    .btn-filter-campaign {
+        background-color: rgba(128, 128, 128, .1);
+        border: none;
+        outline: none;
+        color: rgba(128, 128, 128, 1);
+        height: 30px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-filter-campaign__active {
+        background-color: transparent;
+        color: #ffb700;
+        border: 1px solid #ffb700;
+    }
+}
+
+.campaign-search {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, .1);
+    display: flex;
+    align-items: center;
+
+    .campaign-search__input {
+        border: 1px solid black;
+        outline: none;
+        border-radius: 16px;
+        padding-left: 25px;
+    }
+
+    .fa-search {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(50%, 50%);
+        color: black;
+    }
+}
+
+.list-campaign {
+    .campaign-item {
+        display: flex;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+        padding: 10px 5px;
+        .wrapper-img{
+            height: 140px;
+            width: 300px;
+            img {
+                max-height: 140px;
+            }
+        }
+
+        .campaign-item__content {
+            flex-grow: 1;
+
+            .status-campaign {
+                font-size: 13px !important;
+                height: 20px;
+                width: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+
+            .happening {
+                background-color: #1fc20d;
+
+            }
+
+            .upcoming {
+                background-color: #ffb700;
+            }
+
+            .finish {
+                background-color: red;
+            }
+
+            .happening, .upcoming, .finish{
+                border-radius: 4px;
+            }
+
+            .title-campaign {
+                //text-transform: uppercase;
+                color: black;
+                width: 850px;
+                font-weight: bold;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .content-campaign {
+                font-size: 13px;
+                width: 65%;
+                max-height: 60px;
+                overflow: hidden;
+            }
+
+            .date-campaign {
+                font-size: 12px;
+                font-style: italic;
+            }
+
+            .join, .detailt {
+                border-radius: 2px;
+                height: 30px;
+                width: 130px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .join {
+                background-color: red;
+                font-size: 13px;
+                color: white;
+            }
+
+            .detailt {
+                color: #ffb700;
+                border: 1px solid #ffb700;
+            }
+        }
+    }
+}

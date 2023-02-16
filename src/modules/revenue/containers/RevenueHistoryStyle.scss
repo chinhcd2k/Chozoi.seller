@@ -1,0 +1,53 @@
+div#revenue-history {
+  .card {
+    border: none;
+    background-color: transparent;
+
+    .card-header {
+      background-color: transparent;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .card-body {
+      background-color: white;
+    }
+  ;
+  }
+
+  input {
+    padding-left: 2em;
+  }
+
+  .fa-search {
+    top: .8em;
+    left: 1.5em
+  }
+
+  .react-bootstrap-daterangepicker-container {
+    width: 100%;
+
+    i {
+      position: absolute;
+      top: .8em;
+      left: 1.5em;
+    }
+  }
+
+  table {
+    thead tr {
+      th:nth-of-type(4) {
+        text-align: center;
+      }
+
+      th:nth-of-type(5),
+      th:nth-of-type(6) {
+        text-align: right;
+      }
+    }
+
+    tbody tr td {
+      vertical-align: middle;
+    }
+  }
+}

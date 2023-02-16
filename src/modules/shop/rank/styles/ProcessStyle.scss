@@ -1,0 +1,87 @@
+@mixin process-style {
+  background-color: #E1E1E1;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+
+    li {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      z-index: 3;
+
+      & > div.icon {
+        width: 50px;
+        height: 50px;
+        border: solid 2px white;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        position: relative;
+
+        i.fas {
+          position: relative;
+          z-index: 3;
+        }
+
+        &:before {
+          content: "";
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          background-color: white;
+          border-radius: 20px;
+          z-index: 2;
+        }
+      }
+
+      &.active {
+        div.icon {
+          border-color: #1976d2;
+          background-color: white;
+
+          &:before {
+            background-color: #1976d2;
+          }
+
+          i.fas {
+            color: white;
+          }
+        }
+      }
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 8px;
+      background-color: white;
+      left: 45px;
+      right: 45px;
+      top: 22px;
+      z-index: 1;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      height: 8px;
+      background-color: #1976d2;
+      left: 0;
+      top: 22px;
+      z-index: 2;
+    }
+  }
+}

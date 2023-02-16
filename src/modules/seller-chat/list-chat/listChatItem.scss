@@ -1,0 +1,135 @@
+@mixin list-chat-item {
+    .list-person-chat__person {
+        padding: 8px 4px;
+        cursor: pointer;
+        display: flex;
+        user-select: none;
+        border-bottom: 1px solid #e1e1e1;
+
+        &:hover .list-person-chat__person__detail .list-person-chat__person__detail__date {
+            display: none;
+        }
+
+        &:hover .list-person-chat__person__detail .list-person-chat__person__detail__option {
+            display: block;
+        }
+
+        .list-person-chat__person__avatar {
+            height: 40px;
+            width: 40px;
+            background: transparent linear-gradient(180deg, #FED524 0%, #F95A57 100%) 0% 0% no-repeat padding-box;
+            border-radius: 50%;
+            position: relative;
+            margin-right: 4px;
+
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+
+            .list-person-chat__person__avatar__online {
+                height: 8px;
+                width: 8px;
+                border-radius: 50%;
+                background: transparent linear-gradient(180deg, #46CB4C 0%, #29B32C 100%) 0% 0% no-repeat padding-box;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transform: translate(-25%, -25%);
+            }
+
+            .letter-first-of-name {
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                //font-family: OpenSans-Semibold;
+                font-weight: 700;
+            }
+        }
+
+        .list-person-chat__person__detail {
+            flex-grow: 1;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+
+            .list-person-chat__person__detail__name {
+                //font-family: OpenSans-Semibold;
+                font-weight: 700;
+                font-size: 13px;
+                width: 134px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .list-person-chat__person__detail__option {
+                z-index: 900;
+                padding: 0 5px;
+                color: #F54B24;
+                display: none;
+            }
+
+            .list-person-chat__person__detail__option-detail {
+                font-size: 11px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                border-radius: 4px;
+                padding: 5px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: none;
+                transform: translate(0%, 28%);
+                z-index: 999;
+
+                .detail {
+                    border-bottom: 1px solid #E1E1E1;
+
+                    &:last-child {
+                        border: none;
+                    }
+                }
+
+                .fa-thumbtack, .fa-comment-check, .fa-trash-alt {
+                    color: #999999;
+                    margin: 7px;
+                }
+            }
+
+            .list-person-chat__person__detail__date {
+                color: #999999;
+                font-size: 11px;
+                font-style: italic;
+            }
+
+            .list-person-chat__person__detail__last-message {
+                color: #999999;
+                font-size: 11px;
+                height: 17px;
+                overflow: hidden;
+                flex-grow: 1;
+            }
+
+            .list-person-chat__person__detail__unread-message {
+                background-color: #F54B24;
+                color: white;
+                font-size: 11px;
+                //font-family: OpenSans-Semibold;
+                font-weight: 700;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 16px;
+                width: 16px;
+            }
+        }
+    }
+}

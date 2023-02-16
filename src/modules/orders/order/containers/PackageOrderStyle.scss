@@ -1,0 +1,22 @@
+@import "PopupShippingStyle";
+
+div#order-package {
+  .card {
+    padding: 1em;
+  }
+
+  #secction-2, #secction-3 {
+    margin-top: 10px;
+  }
+
+  div.modal#delivery {
+    .modal-dialog {
+      width: auto;
+      overflow: hidden;
+    }
+  }
+
+  div.modal#popup-seller-shipping {
+    @include popup-shipping-style;
+  }
+}

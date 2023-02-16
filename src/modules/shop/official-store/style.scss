@@ -1,0 +1,9 @@
+@import "components/templates/style";
+
+div#official-store, div#create-official-store {
+  @include templates-style;
+  div.templates > div.container {
+    background-color: white;
+    padding: 16px;
+  }
+}

@@ -1,0 +1,127 @@
+@import "~font-awesome/css/font-awesome.min.css";
+@import "./make-bootstrap.v4.css";
+@import "~antd/dist/antd.min.css";
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOXehpOqc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url("/assets/fonts/OpenSans-Semibold.ttf");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.toast-notification {
+  z-index: 10000 !important;
+}
+
+body {
+  background-color: #f2f6f7;
+  font-family: "Open Sans", serif !important;
+}
+
+/*Fix Theme*/
+.mainnav-profile {
+  max-height: none;
+}
+
+.modal-backdrop.in {
+  opacity: 0.15;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: auto;
+    max-width: 1280px;
+  }
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+div.modal-backdrop {
+  z-index: 10000 !important;
+}
+
+div.modal {
+  z-index: 10001 !important;
+}
+
+/* Custom Style Ant Design */
+button {
+  &.ant-btn {
+    height: 40px;
+    border-color: #F54B24;
+    background-color: white;
+    font-size: 17px;
+    font-family: OpenSans-Semibold, serif;
+    color: #000000;
+
+    &:hover, &:focus {
+      border-color: #F54B24;
+      background-color: white;
+      color: #000000;
+    }
+
+    &:disabled {
+      color: #999999;
+      background-color: #ECECEC;
+      border-color: #ECECEC;
+
+      &:hover, &:focus {
+        color: #999999;
+        background-color: #ECECEC;
+        border-color: #ECECEC;
+      }
+    }
+  }
+
+  &.ant-btn-primary {
+    background-color: #F54B24;
+    color: white;
+    border-color: #F54B24;
+
+    &:hover, &:focus {
+      background-color: #F54B24;
+      border-color: #F54B24;
+      color: white;
+    }
+  }
+
+  &.ant-btn-link {
+    border: none;
+    font-family: "Open Sans", serif;
+  }
+
+  &.ant-btn-sm {
+    height: 28px;
+  }
+}
+
+/*Modal*/
+div.ant-modal-root {
+  .ant-modal-mask {
+    z-index: 10001;
+  }
+
+  .ant-modal-wrap {
+    z-index: 10002;
+  }
+}
+
+/*Dropdown*/
+.ant-select-dropdown {
+  z-index: 10003;
+}
+
+// ============== END CUSTOM STYLE ===============

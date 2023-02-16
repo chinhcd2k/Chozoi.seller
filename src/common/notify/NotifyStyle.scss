@@ -1,0 +1,36 @@
+div#ui-notify {
+  position: fixed;
+  top: 70px;
+  max-width: 500px;
+  z-index: 12000;
+  right: -500px;
+
+  &[aria-hidden="false"] {
+    @keyframes notify-close {
+      from {
+        right: 1em;
+      }
+      to {
+        right: -500px;
+      }
+    }
+    right: -500px;
+    animation-timing-function: ease-in;
+    animation: notify-close .5s;
+  }
+
+  &.show {
+    @keyframes notify-show {
+      from {
+        right: -500px;
+      }
+      to {
+        right: 1em;
+      }
+    }
+
+    right: 1em;
+    animation-timing-function: ease-out;
+    animation: notify-show .6s;
+  }
+}

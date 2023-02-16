@@ -1,0 +1,11 @@
+@mixin template-actions {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  button:not(:last-of-type) {
+    margin-right: 16px;
+  }
+
+}

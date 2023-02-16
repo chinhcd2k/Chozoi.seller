@@ -1,0 +1,35 @@
+tr.product-manager-auction-item {
+  ul.dropdown-menu li {
+    cursor: pointer;
+  }
+
+  td {
+    vertical-align: middle !important;
+  }
+
+  td.product:first-of-type {
+    min-width: 350px;
+    max-width: 350px;
+    vertical-align: auto !important;
+
+    p:first-of-type {
+      cursor: pointer;
+    }
+  }
+
+  img {
+    border: solid 1px #cccccc;
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+  }
+
+  .label-draft {
+    background-color: rgba(0, 0, 0, .3);
+  }
+
+  .bg-yellow {
+    background-color: #ecce5e;
+  }
+}

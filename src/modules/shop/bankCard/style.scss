@@ -1,0 +1,200 @@
+div#shop-manager-card {
+  /*Create by sonpv - 22/11/2019*/
+
+  /*Create by Tuyen*/
+  span.VISA, span.MASTE, span.AMREX, span.JCB, span.VCB, span.TCB, span.MB, span.VIB, span.ICB, span.EXB, span.ACB, span.HDB, span.MSB, span.NVB, span.DAB, span.SHB, span.OJB, span.SEA, span.TPB, span.PGB, span.BIDV, span.AGB, span.SCB, span.VPB, span.VAB, span.GPB, span.SGB, span.NAB, span.BAB {
+    width: 80px;
+    height: 30px;
+    display: block;
+    background: url(https://www.nganluong.vn/webskins/skins/nganluong/checkout/version3/images/bank_logo.png) no-repeat;
+  }
+
+  span.MASTE {
+    background-position: 0px -31px
+  }
+
+  span.AMREX {
+    background-position: 0px -62px
+  }
+
+  span.JCB {
+    background-position: 0px -93px;
+  }
+
+  span.VCB {
+    background-position: 0px -124px;
+  }
+
+  span.TCB {
+    background-position: 0px -155px;
+  }
+
+  span.MB {
+    background-position: 0px -186px;
+  }
+
+  span.VIB {
+    background-position: 0px -217px;
+  }
+
+  span.ICB {
+    background-position: 0px -248px;
+  }
+
+  span.EXB {
+    background-position: 0px -279px;
+  }
+
+  span.ACB {
+    background-position: 0px -310px;
+  }
+
+  span.HDB {
+    background-position: 0px -341px;
+  }
+
+  span.MSB {
+    background-position: 0px -372px;
+  }
+
+  span.NVB {
+    background-position: 0px -403px;
+  }
+
+  span.DAB {
+    background-position: 0px -434px;
+  }
+
+  span.SHB {
+    background-position: 0px -465px;
+  }
+
+  span.OJB {
+    background-position: 0px -496px;
+  }
+
+  span.SEA {
+    background-position: 0px -527px;
+  }
+
+  span.TPB {
+    background-position: 0px -558px;
+  }
+
+  span.PGB {
+    background-position: 0px -589px;
+  }
+
+  span.BIDV {
+    background-position: 0px -620px;
+  }
+
+  span.AGB {
+    background-position: 0px -651px;
+  }
+
+  span.SCB {
+    background-position: 0px -682px;
+  }
+
+  span.VPB {
+    background-position: 0px -713px;
+  }
+
+  span.VAB {
+    background-position: 0px -744px;
+  }
+
+  span.GPB {
+    background-position: 0px -775px;
+  }
+
+  span.SGB {
+    background-position: 0px -806px;
+  }
+
+  span.NAB {
+    background-position: 0px -837px;
+  }
+
+  span.BAB {
+    background-position: 0px -868px;
+  }
+
+  .text-primary {
+    color: #1976D2;
+  }
+
+  .card-item {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    display: flex;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+    min-height: 196px;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-top: 45.25%;
+    }
+
+    img {
+      height: 25px;
+    }
+
+    i.fa-plus {
+      opacity: .2;
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+    }
+
+    .card-item-content {
+      width: calc(100% - 30px);
+      position: absolute;
+
+      .card-item-header {
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+        span.badge {
+          position: absolute;
+          right: 0;
+          top: 5px;
+        }
+      }
+
+      .card-item-body {
+        padding: 10px 0;
+        line-height: 2.5rem;
+
+        .card-name {
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        .card-number {
+          letter-spacing: .2rem;
+          font-size: 2rem;
+          font-weight: 600;
+        }
+
+        .card-actions {
+          span {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .card-item.add {
+    align-items: center;
+    justify-content: center;
+    border: dashed 1px #cccccc;
+  }
+}

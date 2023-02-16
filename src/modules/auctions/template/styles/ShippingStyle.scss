@@ -1,0 +1,71 @@
+@mixin shipping-style {
+  .weight {
+    label {
+      display: inline-block;
+      line-height: 34px;
+      width: 126px;
+      margin: 0;
+    }
+
+    .weight-form {
+      position: relative;
+      max-width: 300px;
+
+      &:after {
+        position: absolute;
+        content: "gram";
+        top: .5em;
+        font-size: 1em;
+        //color: green;
+        right: 5px;
+      }
+    }
+  }
+
+  .package-size {
+    p {
+      line-height: 34px;
+      //width: 140px;
+      margin: 0;
+    }
+
+    .form {
+      display: flex;
+
+      .form-group {
+        position: relative;
+        width: 100px;
+
+        &:nth-child(2) {
+          margin: 0 5px;
+        }
+
+        &:after {
+          content: "cm";
+          position: absolute;
+          top: .5em;
+          //color: green;
+          font-size: 1em;
+          right: .5em;
+        }
+      }
+    }
+  }
+
+  .list-shipping {
+    padding-top: 5px;
+    border-top: solid 1px #cccccc;
+
+    & > label {
+      font-weight: bold;
+    }
+
+    div.list:not(:first-of-type) {
+      padding-top: .5em;
+    }
+
+    div .list:not(:last-child) {
+      border-bottom: dashed 1px #cccccc;
+    }
+  }
+}

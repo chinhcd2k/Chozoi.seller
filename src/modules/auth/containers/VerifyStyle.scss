@@ -1,0 +1,154 @@
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+  .auth-verify-otp {
+    .title {
+      all: unset;
+      color: white;
+      font-size: 20px !important;
+    }
+
+    form {
+      padding: 40px 0;
+
+      .code {
+        width: 100%;
+
+        .form_activation_code {
+          width: 70%;
+          padding-right: 10px;
+
+          input {
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            border: 1px solid rgb(220, 216, 224);
+
+            &::placeholder {
+              color: rgb(172, 172, 172);
+            }
+          }
+        }
+
+        .resend_the_code {
+          width: 30%;
+          padding-left: 10px;
+
+          button {
+            width: 100%;
+            height: 40px;
+            border-radius: 3px;
+            color: rgb(245, 75, 36);;
+            background-color: rgb(255, 249, 240);
+            border: 1px solid rgb(255, 249, 240);
+
+            &[disabled] {
+              cursor: not-allowed;
+              opacity: .5;
+            }
+          }
+        }
+      }
+
+      .confirm {
+        padding-top: 50px;
+
+        button {
+          width: 30%;
+          height: 40px;
+          color: white;
+          font-size: 12pt;
+          border-radius: 5px;
+          background-color: rgb(245, 75, 36);
+          border: 1px solid rgb(230, 223, 225);
+        }
+      }
+    }
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 568px) {
+  .auth-verify-otp {
+    padding: 0 15px;
+
+    p {
+      color: rgb(55, 120, 193);
+      padding-bottom: 40px;
+    }
+
+    form {
+      .code {
+        width: 100%;
+
+        .form_activation_code {
+          width: 70%;
+          padding-right: 10px;
+
+          input {
+            width: 100%;
+            height: 35pt;
+            font-size: 12pt;
+            padding-left: 15px;
+            border-radius: 3px;
+            background-color: white;
+            border: 1px solid rgb(220, 216, 224);
+
+            &::placeholder {
+              color: rgb(172, 172, 172);
+            }
+          }
+        }
+
+        .resend_the_code {
+          width: 30%;
+          padding-left: 10px;
+
+          button {
+            width: 100%;
+            height: 35pt;
+            padding: 0;
+            border-radius: 5px;
+            color: rgb(245, 75, 36);;
+            background-color: rgb(255, 249, 240);
+            border: 1px solid rgb(245, 75, 36);
+          }
+        }
+      }
+
+      .confirm {
+        padding-top: 50px;
+
+        button {
+          width: 100%;
+          height: 35pt;
+          color: white;
+          font-size: 12pt;
+          border-radius: 5px;
+          background-color: rgb(245, 75, 36);
+          border: 1px solid rgb(230, 223, 225);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .auth-verify-otp {
+    form {
+      .code {
+        .form_activation_code {
+          input {
+            height: 30pt;
+          }
+        }
+
+        .resend_the_code {
+          button {
+            height: 30pt;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

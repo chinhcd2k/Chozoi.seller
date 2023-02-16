@@ -1,0 +1,43 @@
+@mixin edit-template {
+  div.modal#product-modal-popup-container-image {
+    .modal-dialog .modal-content .modal-body {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 540px;
+        flex-wrap: wrap;
+
+        li {
+          position: relative;
+          width: 100px;
+          height: 100px;
+          margin: 0 8px 10px 0;
+          cursor: pointer;
+
+
+          &.active:after {
+            content: '\f046';
+            font-family: FontAwesome, serif;
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+            font-size: 20px;
+            color: #FE540F;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: solid 1px #cccccc;
+          }
+        }
+      }
+    }
+  }
+  .tooltip .tooltip-inner {
+    text-align: left !important;
+  }
+}

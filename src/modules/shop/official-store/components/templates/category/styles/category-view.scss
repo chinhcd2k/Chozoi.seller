@@ -1,0 +1,24 @@
+@mixin category-view {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 100%;
+  h4 {
+    padding-left: 16px;
+    text-transform: uppercase;
+    color: white;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+      padding-right: 16px;
+      line-height: 24px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+div#manager-coupon-site {
+  .card-header {
+    background-color: white;
+  }
+
+  div.filter {
+    div.mar-btm {
+      margin-left: 8px;
+      min-width: 400px;
+    }
+
+    div.group-btn {
+      flex-grow: 1;
+      text-align: end;
+    }
+  }
+
+  div.list-coupon {
+    table {
+      thead tr th {
+        font-weight: 700;
+      }
+
+      tbody tr {
+        td:last-of-type {
+          a, p {
+            color: #0ab1fc;
+            font-weight: 700;
+            display: block;
+
+            &.pause {
+              color: #f0685e;
+            }
+
+            &.enable {
+              color: #9cc56c;
+            }
+          }
+        }
+      }
+    }
+  }
+}

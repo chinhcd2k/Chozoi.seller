@@ -1,0 +1,117 @@
+#auth-header {
+  font-family: Roboto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: linear-gradient(to right, rgb(245, 75, 36), #ff981a);
+  height: 68px;
+
+  .container {
+    height: 100%;
+
+    .row {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      .logo {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 77px;
+          height: 31px;
+        }
+      }
+
+      .introduce_app {
+        color: white;
+        text-align: center;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .down_app {
+        display: none;
+
+        .btn_app {
+          width: 65px;
+          height: 35px;
+          border: none;
+          font-size: 14px;
+          border-radius: 3px;
+          color: rgb(245, 75, 36);
+          background-color: white;
+        }
+
+        .down_application {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .close_header {
+    position: fixed;
+    right: 1em;
+    top: .5em;
+
+    .close {
+      color: white;
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    background-color: #183640;
+    background-image: none;
+    height: 38px;
+    .container {
+      .row {
+        padding: 0;
+
+        .logo {
+          width: auto;
+
+          img {
+            width: 63px;
+            height: 26px;
+          }
+        }
+
+        .down_app {
+          padding-left: 0;
+
+          .down_application {
+            display: flex;
+
+            i {
+              color: #f4937c;
+              font-size: 23px;
+              line-height: 37px;
+              margin-right: 5px;
+              cursor: pointer;
+            }
+
+            a {
+              color: #f4937c;
+              font-size: 14px;
+              line-height: 37px;
+            }
+          }
+        }
+
+        .down_app .btn_app, .introduce_app {
+          display: none;
+        }
+      }
+    }
+    .close_header {
+      display: none;
+    }
+  }
+}
